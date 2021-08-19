@@ -1,14 +1,16 @@
-* {
-  box-sizing: border-box;
-}
 @font-face {
-  font-family: "Bebas Neue Cyrillic";
-  src: local("Bebas Neue Cyrillic"), local("BebasNeueCyrillic"),
-    url("../fonts/BebasNeueCyrillic.woff2") format("woff2"),
-    url("../fonts/BebasNeueCyrillic.woff") format("woff");
+  font-family: "Bebas Neue";
+  src: local("Bebas Neue Regular Regular"), local("BebasNeueRegular"),
+    url("../fonts/BebasNeueRegular.woff2") format("woff2"),
+    url("../fonts/BebasNeueRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
   font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -78,6 +80,9 @@ body {
 .home-image path:hover {
   opacity: 1;
 }
+path.current-floor {
+  opacity: 1;
+}
 .counter-group {
   display: flex;
   flex-direction: column;
@@ -90,7 +95,7 @@ body {
 }
 .main-title {
   margin: 0;
-  font-family: "BebasNeueCyrillic", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 37px;
@@ -98,6 +103,7 @@ body {
   color: #635854;
 }
 .counter {
+  font-family: "Bebas Neue", sans-serif;
   color: #635854;
   font-size: 124px;
   margin-top: 10px;
